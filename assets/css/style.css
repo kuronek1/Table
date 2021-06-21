@@ -6,7 +6,6 @@
 .table {
     text-align: center;
     border-radius: 20px;
-    border: 5px solid rgb(255, 255, 255);
     border-collapse: collapse;
 }
 
@@ -15,7 +14,6 @@ thead {
 }
 td {
     padding: 10px;
-
 }
 span {
     width: 100%;
@@ -25,54 +23,63 @@ span {
     font-size: 30px;
 }
 
-.bgcblue1 {
-    background-color: rgb(120,135,171);
-    border-top-left-radius: 25px;
+.table > thead td:nth-child(1) {
+    background-color: #7887ab;
 }
-.bgcblue2 {
-    background-color: rgb(79,98,142);
+.table > thead td:nth-child(2) {
+    background-color: #4f628e;
 }
-.bgcblue3 {
-    background-color: rgb(46,65,114);
+.table > thead td:nth-child(3) {
+    background-color: #2e4172;
 }
-.bgcblue4 {
-    background-color: rgb(22,41,85);
+.table > thead td:nth-child(4) {
+    background-color: #162955;
 }
-.bgcblue5 {
-    background-color: rgb(6,21,57);
-    border-top-right-radius: 25px;
+.table > thead td:nth-child(5) {
+    background-color: #061539;
 }
 
-.pre {
-    border-bottom-left-radius: 25px;
+.table > tbody tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #dbdbdb;
 }
-.bbrr {
-    border-bottom-right-radius: 25px;
+.table > tbody tr:nth-child(odd) td:nth-child(even) {
+    background-color: #e7e7e7;
+}
+.table > tbody tr:nth-child(even) td:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+.table > tbody tr:nth-child(even) td:nth-child(even) {
+    background-color: white;
+}
+.table > tfoot tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #dbdbdb;
+}
+.table > tfoot tr:nth-child(odd) td:nth-child(even) {
+    background-color: #e7e7e7;
+}
+.table > thead td:first-child {
+    border-top-left-radius: 10px;
+}
+.table > thead td:last-child {
+    border-top-right-radius: 10px;
+}
+.table > tfoot td:first-child {
+    border-bottom-left-radius: 10px;
+}
+.table > tfoot td:last-child {
+    border-bottom-right-radius: 10px;
 }
 
-.table  tr.first1  td:nth-child(odd) {
-    background-color: rgb(219,219,219);
-}
-.table  tr.first1  td:nth-child(even) {
-    background-color: rgb(231,231,231);
-}
-.table tr.second2 td:nth-child(odd) {
-    background-color: rgb(236,236,236);
-}
-.table tr.second2 td:nth-child(even) {
-    background-color: rgb(243,243,243);
 
-}
-
-.btn {
+ .btn {
     text-decoration: none;
-    background-color: whitesmoke;
+    background-color: #D3D3D3;
     color: black;
     display: inline-block;
     height: 30px;
     width: 70px;
     border-radius: 0;
-    border:1px gray solid;
+    border: 1px gray solid;
 }
 
 .btn:hover {
@@ -82,5 +89,5 @@ span {
 }
 
 .btn:focus {
-    border:2px aqua solid ;
+    border: 2px aqua solid;
 }
